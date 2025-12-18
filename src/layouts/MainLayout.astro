@@ -1,0 +1,20 @@
+---
+import HeroSection from "../components/HeroSection";
+import "../styles/global.css";
+import Navbar from "./Navbar.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Travel Guide to Nagpur</title>
+  </head>
+
+  <body class="bg-white text-gray-800">
+    <Navbar />
+    <HeroSection />
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
