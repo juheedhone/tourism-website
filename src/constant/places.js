@@ -10,6 +10,8 @@ export const places = [
     name: "Jal Mahal",
     desc: "Jal Mahal, meaning “Water Palace,” is a striking 18th-century palace located in the middle of Man Sagar Lake in Jaipur, Rajasthan. Built by Maharaja Jai Singh II, it blends Rajput and Mughal architectural styles and is made of red sandstone. The palace appears to float on water because it has five storeys, four of which remain submerged when the lake is full, leaving only the top floor visible. Although visitors cannot enter the palace, it is a popular tourist attraction for its serene lake setting, beautiful views of the Aravalli hills, and stunning reflections at sunrise and sunset.",
     img: "./jal-mahal.jpg",
+    hour: "",
     hoverImg: "./jal-mahal-day.jpg",
+    reverse: true,
   },
 ];
