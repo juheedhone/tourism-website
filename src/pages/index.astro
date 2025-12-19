@@ -1,16 +1,46 @@
 ---
-
+import PlaceCard from "../components/PlaceCard";
+import { places } from "../constant/places";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout>
+  <section class="text-center py-20">
+    <h2 class="text-5xl font-serif font-bold tracking-wide text-[#4A3F35]">
+      JAIPUR
+    </h2>
+
+    <h3 class="text-lg tracking-widest text-[#4A3F35] mt-2">THE PINK CITY</h3>
+
+    <div
+      class="max-w-3xl mx-auto mt-10 space-y-8 text-lg leading-relaxed text-[#4A3F35] px-4"
+    >
+      <p>
+        Jaipur, the vibrant capital of Rajasthan, is famously known as the Pink
+        City for its stunning pink-colored heritage buildings. Founded in 1727
+        by Maharaja Sawai Jai Singh II, the city beautifully blends royal
+        history with modern culture. From grand forts like Amber, Nahargarh, and
+        Jaigarh to iconic landmarks such as Hawa Mahal and City Palace, Jaipur
+        is a treasure of Rajput architecture, art, and tradition.
+      </p>
+
+      <p>
+        The bustling bazaars of Johari Bazaar and Bapu Bazaar showcase colorful
+        handicrafts, jewelry, textiles, and traditional Rajasthani artwork.
+        Surrounded by the Aravalli Hills and dotted with palaces, gardens,
+        lakes, and museums, Jaipur offers tourists a perfect mix of heritage,
+        culture, food, and adventure.
+      </p>
+
+      <p>
+        Whether you're exploring the majestic forts, enjoying traditional
+        cuisine like dal-baati-churma or savoring sweets like ghewar, or taking
+        a camel safari — Jaipur promises an unforgettable experience.
+      </p>
+    </div>
+  </section>
+
+  <div>
+    {places.map((place) => <PlaceCard {...place} />)}
+  </div>
+</MainLayout>
