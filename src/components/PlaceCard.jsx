@@ -27,7 +27,7 @@ export default function PlaceCard({
         />
       </div>
       {/* Description Section */}
-      <div className="md:w-1/2 w-full p-5 flex flex-col justify-center bg-white">
+      <div className="md:w-1/2 w-full p-5 flex flex-col justify-center bg-[#F7EFE5] border border-gray-300">
         <h3 className="text-2xl text-center font-semibold text-[#4A3F35]">
           {name}
         </h3>
