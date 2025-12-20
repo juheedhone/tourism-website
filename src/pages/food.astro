@@ -1,0 +1,38 @@
+---
+import { foods } from "@/constant/foods";
+import "../styles/global.css";
+---
+
+<div>
+  <section class="text-center py-20">
+    <h2 class="text-4xl font-bold text-[#8D6E63]">
+      Taste the Flavours of Jaipur
+    </h2>
+    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+      Jaipur is not only known for its royal palaces but also for its rich and
+      vibrant food culture. From spicy curries to sweet delights, explore the
+      must-try dishes of the Pink City.
+    </p>
+  </section>
+
+  <section
+    class="px-6 md:px-20 pb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+  >
+    {
+      foods.map((item) => (
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300">
+          <img
+            src={item.img}
+            alt={item.name}
+            class="w-full h-56 object-cover"
+          />
+
+          <div class="p-5">
+            <h3 class="text-xl font-semibold text-[#795548]">{item.name}</h3>
+            <p class="mt-2 text-gray-600">{item.desc}</p>
+          </div>
+        </div>
+      ))
+    }
+  </section>
+</div>
