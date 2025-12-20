@@ -4,7 +4,7 @@ export const places = [
     desc: "Amer Fort (also spelled Amber Fort) is a historic hilltop fort and palace near Jaipur. It’s one of Rajasthan’s most famous heritage sites, known for its magnificent Rajput-era architecture blending Rajput & Mughal styles, intricate carvings, courtyards, and mirror work. It was originally built by Raja Man Singh I and expanded by later rulers. ",
     hour: "Visiting Hours: Daytime: ~8:00 AM – 5:30 PM (some sources say up to ~9:00 PM under night tourism initiatives).",
     img: "/places/amer-fort.jpg",
-    hoverImg: "./Amer-fort-inside.jpg",
+    hoverImg: "/places/Amer-fort-inside.jpg",
   },
   {
     name: "Jal Mahal",
