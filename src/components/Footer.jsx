@@ -12,7 +12,7 @@ const Footer = () => {
             <ul className="space-y-1 ">
               {section.links.map((link, idx) => (
                 <a
-                  href="https://google.com"
+                  href="https://www.tourism.rajasthan.gov.in/jaipur.html"
                   target="_blank"
                   key={idx}
                   className="block text-left w-full cursor-pointer "
